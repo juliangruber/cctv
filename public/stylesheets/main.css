@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'latin_modern_mono10_regular';
+    src: url('../fonts/lmmono10-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+body > img {
+    display: none;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.6);
+    display: block;
+    font-size: 0.9rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.header li {
+    clear: both;
+    float: left;
+    padding: 2px;
+    position: relative;
+    width: 130px;
+}
+
+.header a {
+    color: #333;
+    display: block;
+    outline: none;
+    padding: 2px 5px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: #0eabde;
+    color: #fff;
+}
+
+#wrapper {
+    font-family: 'latin_modern_mono10_regular', sans-serif;
+    margin: 0 auto;
+    padding: 3px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #eee;
+    color: #164352;
+    font-family: 'latin_modern_mono10_regular', sans-serif;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    outline: none;
+    padding: 5px;
+    width: 75%;
+}
+
+.list {
+    float: left;
+    position: relative;
+}
+
+.chats {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.chats li {
+    background-color: #eee;
+    clear: both;
+    float: left;
+    margin-bottom: 1px;
+    width: 100%;
+}
+
+.chats li img {
+    border-radius: 25px;
+    display: block;
+    float: left;
+    min-width: 128px;
+    width: 20%;
+}
+
+.chats li p {
+    color: #777;
+    float: left;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    min-width: 182px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-shadow: #f1f1f1 -1px 1px 0;
+    width: 60%;
+}
+
+.chats li p span {
+    color: #70b4e4;
+    font-size: 0.8rem;
+}
+
+.chats li p a {
+    color: #34a4b8;
+    text-decoration: none;
+}
+
+.chats li p a:hover {
+    background-color: #fff;
+}
+
+ul li.on {
+    background-color: #adf6ff;
+}
+
+.hidden {
+    display: none;
+}
+
+.message-content {
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+#add-chat-form {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+}
+
+#add-chat-blocker {
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 0;
+    color: #111;
+    font-size: 2rem;
+    height: 55px;
+    left: 0;
+    line-height: 2rem;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+#footer {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+}
+
+.end {
+    float: left;
+    height: 20px;
+    position: relative;
+    width: 1px;
+}
+
+@media only screen and (max-width: 460px) {
+    .input {
+        width: 50%;
+    }
+
+    .chats li p {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    #add-chat-blocker {
+        font-size: 1.6rem;
+        left: -150px;
+        line-height: 3.6rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .input {
+        width: 155px;
+    }
+}
