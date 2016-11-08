@@ -17,9 +17,9 @@
     "jade": ">= 0.29.0",
     "nconf": ">= 0.6.7",
     "express-persona": "git://github.com/jbuck/express-persona.git",
-    "meatspace-publico": "0.0.3",
-    "gravatar": "1.0.6",
-    "gumhelper": "0.0.3",
+    "meatspace-publico": "2.0.2",
+    "gravatar": "1.5.2",
+    "gumhelper": "0.0.6",
     "socket.io": ">= 0.9.16"
   },
   "devDependencies": {
@@ -28,8 +28,8 @@
     "grunt-contrib-uglify": ">= 0.1.2",
     "grunt-contrib-requirejs": ">= 0.4.0",
     "grunt-contrib-cssmin": ">= 0.4.1",
-    "grunt-contrib-copy": "~0.4.1",
-    "nodemon": "~0.7.10",
-    "grunt-cli": "~0.1.9"
+    "grunt-contrib-copy": "~1.0.0",
+    "nodemon": "~1.11.0",
+    "grunt-cli": "~1.2.0"
   }
 }
