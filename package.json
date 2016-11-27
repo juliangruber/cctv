@@ -20,7 +20,7 @@
     "meatspace-publico": "2.0.2",
     "gravatar": "1.6.0",
     "gumhelper": "0.0.6",
-    "socket.io": ">= 0.9.16"
+    "socket.io": ">=1.7.1"
   },
   "devDependencies": {
     "grunt": ">= 0.4.x",
